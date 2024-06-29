@@ -1,9 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import infrareportImage from "../assets/img/infrareportImage.png";
+import infrareportapiImage from "../assets/img/infrareportapiImage.png";
+import studybuddyapiImage from "../assets/img/studybuddyapiImage.png";
 import studybuddyImage from "../assets/img/studybuddyImage.png";
+import teamallocationImage from "../assets/img/teamallocationImage.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,40 +15,35 @@ export const Projects = () => {
   const projects = [
     {
       title: "Studybuddy",
-      description: "Design & Desenvolvimento",
+      description: "Frontend & Design",
       imgUrl: studybuddyImage,
       link: "https://kauamoreira.pythonanywhere.com/home/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      link: ""
+      title: "Studybuddy API",
+      description: "Backend & REST API",
+      imgUrl: studybuddyapiImage,
+      link: "https://kauamoreira.pythonanywhere.com/api/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      link: ""
+      title: "Infrareport",
+      description: "Frontend & Design",
+      imgUrl: infrareportImage,
+      link: "https://infrareport-react-2023.vercel.app"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      link: ""
+      title: "Infrareport API",
+      description: "Backend & REST API",
+      imgUrl: infrareportapiImage,
+      link: "https://infrareportrestapi.pythonanywhere.com"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      link: ""
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
+      title: "Team allocation",
+      description: "Frontend & Empresas",
+      imgUrl: teamallocationImage,
+      link: "https://team-allocation-frontend.vercel.app"
+    }
+  ]
 
   return (
     <section className="project" id="projects">
