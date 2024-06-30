@@ -67,9 +67,11 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
             <TrackVisibility>
-                  <iframe title="Apresentação Pessoal" id="videoDiv" width="100%" height="315"src="https://www.youtube.com/embed/Yri1QBEo8Fs" allowfullscreen></iframe>
-                  <p>Olá, meu nome é Kauã, tenho 19 anos, curso Engenharia de Software no Inatel e sou completamente apaixonado por tecnologia, inovação e desafios. Sou proativo e curioso por natureza, e garanto que sempre procuro alcançar o protagonismo no que faço, com o intuito de cada dia ser melhor do que um dia já fui. Resumiria minha vida em uma frase: "Uma tentativa constante de ser a melhor versão de mim mesmo".<br/></p>
-                  <p>Se você está procurando alguém comprometido, criativo e focado em entregar resultados de qualidade, eu estou à disposição para colaborar em seus projetos. Vamos construir algo incrível juntos! Entre em contato comigo através dos meus canais de comunicação. Até mais!</p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe title="Apresentação Pessoal" id="videoDiv" width="100%" height="315"src="https://www.youtube.com/embed/Yri1QBEo8Fs"></iframe>
+              </div>
+              <p>Olá, meu nome é Kauã, tenho 19 anos, curso Engenharia de Software no Inatel e sou completamente apaixonado por tecnologia, inovação e desafios. Sou proativo e curioso por natureza, e garanto que sempre procuro alcançar o protagonismo no que faço, com o intuito de cada dia ser melhor do que um dia já fui. Resumiria minha vida em uma frase: "Uma tentativa constante de ser a melhor versão de mim mesmo".<br/></p>
+              <p>Se você está procurando alguém comprometido, criativo e focado em entregar resultados de qualidade, eu estou à disposição para colaborar em seus projetos. Vamos construir algo incrível juntos! Entre em contato comigo através dos meus canais de comunicação. Até mais!</p>
             </TrackVisibility>
         </Row>
       </Container>

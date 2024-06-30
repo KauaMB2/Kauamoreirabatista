@@ -336,7 +336,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 14px 0 10px 0;
 }
 .skill-slider {
   width: 80%;
@@ -353,6 +353,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+.languageIcon{
+  width: 3em;
+  height: 3em;
 }
 
 /************ Projects Css ************/
