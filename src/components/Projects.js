@@ -5,10 +5,11 @@ import infrareportapiImage from "../assets/img/infrareportapiImage.png";
 import studybuddyapiImage from "../assets/img/studybuddyapiImage.png";
 import studybuddyImage from "../assets/img/studybuddyImage.png";
 import teamallocationImage from "../assets/img/teamallocationImage.png";
+import savetheplanetImage from "../assets/img/savetheplanetImage.png";
+import pongImage from "../assets/img/pongImage.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { Skills } from "./Skills";
 
 export const Projects = () => {
 
@@ -16,39 +17,57 @@ export const Projects = () => {
     {
       title: "Studybuddy",
       description: "Frontend & Design",
+      section: 1,
       imgUrl: studybuddyImage,
       link: "https://kauamoreira.pythonanywhere.com/home/"
     },
     {
       title: "Studybuddy API",
       description: "Backend & REST API",
+      section: 1,
       imgUrl: studybuddyapiImage,
       link: "https://kauamoreira.pythonanywhere.com/api/"
     },
     {
       title: "Infrareport",
       description: "Frontend & Design",
+      section: 1,
       imgUrl: infrareportImage,
       link: "https://infrareport-react-2023.vercel.app"
     },
     {
       title: "Infrareport API",
       description: "Backend & REST API",
+      section: 2,
       imgUrl: infrareportapiImage,
       link: "https://infrareportrestapi.pythonanywhere.com"
     },
     {
       title: "Team allocation",
       description: "Frontend & Empresas",
+      section: 2,
       imgUrl: teamallocationImage,
       link: "https://team-allocation-frontend.vercel.app"
+    },
+    {
+      title: "Save the planet",
+      description: "Jogo & Entretenimento",
+      section: 2,
+      imgUrl: savetheplanetImage,
+      link: "https://savetheplanetkaua.netlify.app"
+    },
+    {
+      title: "PONG",
+      description: "Jogo & Entretenimento",
+      section: 3,
+      imgUrl: pongImage,
+      link: "https://pongkaua.netlify.app"
     }
   ]
 
   return (
     <section className="project" id="projects">
       <Container>
-        <Skills/>
         <Row>
           <Col size={12}>
             <TrackVisibility>
@@ -72,21 +91,55 @@ export const Projects = () => {
                       <Row>
                         {
                           projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
+                            if(project.section===1){
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            }else{
+                              return false
+                            }
                           })
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Em espera...</p>
+                    <Row>
+                        {
+                          projects.map((project, index) => {
+                            if(project.section===2){
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            }else{
+                              return false
+                            }
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Em espera...</p>
+                    <Row>
+                        {
+                          projects.map((project, index) => {
+                            if(project.section===3){
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            }else{
+                              return false
+                            }
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -95,7 +148,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt="img" src={colorSharp2}></img>
     </section>
   )
 }
