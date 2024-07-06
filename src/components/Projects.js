@@ -1,69 +1,14 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import infrareportImage from "../assets/img/infrareportImage.png";
-import infrareportapiImage from "../assets/img/infrareportapiImage.png";
-import studybuddyapiImage from "../assets/img/studybuddyapiImage.png";
-import studybuddyImage from "../assets/img/studybuddyImage.png";
-import teamallocationImage from "../assets/img/teamallocationImage.png";
-import savetheplanetImage from "../assets/img/savetheplanetImage.png";
-import pongImage from "../assets/img/pongImage.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
+import { useState } from "react"
+import { WebProjectCard } from "./WebProjectCard"
+import colorSharp2 from "../assets/img/color-sharp2.png"
+import 'animate.css'
+import TrackVisibility from 'react-on-screen'
+import { projects } from "./JSON/projects"
 
 export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Studybuddy",
-      description: "Frontend & Design",
-      section: 1,
-      imgUrl: studybuddyImage,
-      link: "https://kauamoreira.pythonanywhere.com/home/"
-    },
-    {
-      title: "Studybuddy API",
-      description: "Backend & REST API",
-      section: 1,
-      imgUrl: studybuddyapiImage,
-      link: "https://kauamoreira.pythonanywhere.com/api/"
-    },
-    {
-      title: "Infrareport",
-      description: "Frontend & Design",
-      section: 1,
-      imgUrl: infrareportImage,
-      link: "https://infrareport-react-2023.vercel.app"
-    },
-    {
-      title: "Infrareport API",
-      description: "Backend & REST API",
-      section: 2,
-      imgUrl: infrareportapiImage,
-      link: "https://infrareportrestapi.pythonanywhere.com"
-    },
-    {
-      title: "Team allocation",
-      description: "Frontend & Empresas",
-      section: 2,
-      imgUrl: teamallocationImage,
-      link: "https://team-allocation-frontend.vercel.app"
-    },
-    {
-      title: "Save the planet",
-      description: "Jogo & Entretenimento",
-      section: 2,
-      imgUrl: savetheplanetImage,
-      link: "https://savetheplanetkaua.netlify.app"
-    },
-    {
-      title: "PONG",
-      description: "Jogo & Entretenimento",
-      section: 3,
-      imgUrl: pongImage,
-      link: "https://pongkaua.netlify.app"
-    }
-  ]
+  const [tab, setTab] = useState('first')
+  const [category, setCategory] = useState('web_development')
 
   return (
     <section className="project" id="projects">
@@ -74,8 +19,21 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projetos</h2>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                <Tab.Container id="categories-tabs" defaultActiveKey={category} onSelect={(eventKey) => setCategory(eventKey)}>
+                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-categories">
+                      <Nav.Item>
+                        <Nav.Link eventKey="web_development">Desenvolvimento<br/>web</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="computer_vision">I.A. e Visão<br/>Computacional</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="GUI">Interfaces<br/>gráficas</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </Tab.Container>
+                <Tab.Container id="projects-tabs" defaultActiveKey={tab} onSelect={(eventKey) => setTab(eventKey)}>
+                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tabs">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Aba 1</Nav.Link>
                     </Nav.Item>
@@ -90,54 +48,48 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
-                            if(project.section===1){
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  />
-                              )
-                            }else{
-                              return false
-                            }
-                          })
+                          projects[category]["first"].length>0 ? projects[category]["first"].map((project, index) => {
+                            return (
+                              <WebProjectCard
+                                key={index}
+                                {...project}
+                                category={category}
+                                />
+                            )
+                        }):
+                        <h2>Em breve</h2>
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                     <Row>
                         {
-                          projects.map((project, index) => {
-                            if(project.section===2){
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  />
-                              )
-                            }else{
-                              return false
-                            }
-                          })
+                          projects[category]["second"].length>0 ? projects[category]["second"].map((project, index) => {
+                            return (
+                              <WebProjectCard
+                                key={index}
+                                {...project}
+                                category={category}
+                                />
+                            )
+                        }):
+                        <h2>Em breve</h2>
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                     <Row>
                         {
-                          projects.map((project, index) => {
-                            if(project.section===3){
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...project}
-                                  />
-                              )
-                            }else{
-                              return false
-                            }
-                          })
+                          projects[category]["third"].length>0 ? projects[category]["third"].map((project, index) => {
+                            return (
+                              <WebProjectCard
+                                key={index}
+                                {...project}
+                                category={category}
+                                />
+                            )
+                        }):
+                        <h2>Em breve</h2>
                         }
                       </Row>
                     </Tab.Pane>
