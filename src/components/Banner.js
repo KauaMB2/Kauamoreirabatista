@@ -16,6 +16,7 @@ export const Banner = () => {
     "Tenho habilidades em Visão Computacional.",
     "Tenho experiência em Desenvolvimento Backend.",
     "Tenho conhecimentos em Bancos de Dados.",
+    "Tenho experiência em desenvolvimento Desktop."
   ];
   const period = 2500;
 
@@ -57,34 +58,22 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Bem vindo ao meu Portfólio</span>
+                <div className="animate__animated animate__fadeIn">
+                  <span className="tagline">BEM VINDO AO MEU PORTFÓLIO</span>
                   <h1 id="rotatedTxt">
-                    Olá! Meu nome é Kauã.{" "}
-                    <span className="txt-rotate" dataPeriod="1000">
-                      <span className="wrap">{text}</span>
+                    Olá, meu nome é Kauã.
+                    <span className="txt-rotate">
+                      <span className="wrap"> {text}</span>
                     </span>
                   </h1>
                 </div>
-              )}
             </TrackVisibility>
           </Col>
           <Col className="headerImg" xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
+                <div className="animate__animated animate__zoomIn">
                   <img src={headerImg} alt="Header Img" />
                 </div>
-              )}
             </TrackVisibility>
           </Col>
         </Row>
@@ -92,12 +81,10 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <TrackVisibility>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                title="Apresentação Pessoal"
-                id="videoDiv"
-                src="https://www.youtube.com/embed/Yri1QBEo8Fs"
-              ></iframe>
+            <div className="wrapper">
+              <div className="h_iframe">
+                <iframe title="Vídeo de apresentação" height='465px' width='470px' src="https://www.youtube.com/embed/Yri1QBEo8Fs"></iframe>
+              </div>
             </div>
             <p>
               Olá, meu nome é Kauã, tenho 19 anos, curso Engenharia de Software

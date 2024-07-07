@@ -11,6 +11,8 @@ import identificadordesinaisImage from "../../assets/img/identificadordesinaisIm
 import mousevisualImage from "../../assets/img/mousevisualImage.png";
 import paintvisualImage from "../../assets/img/paintvisualImage.png";
 import personaltrainerImage from "../../assets/img/personaltrainerImage.png";
+import movevisionImage from "../../assets/img/movevisionImage.png";
+import cadastrodeclientesImage from "../../assets/img/cadastrodeclientesImage.png";
 
 export const projects = {
   web_development: {
@@ -82,23 +84,22 @@ export const projects = {
         link: "https://drive.google.com/uc?export=download&id=1eNG8LThg6vICESVci4pAxaL_Ri81Rw8y",
       },
       {
+        title: "Move Vision",
+        description: "I.A. & Entretenimento",
+        videoUrl: "https://www.youtube.com/embed/nhY7hpbePBQ",
+        explanation: "Move Vision é um jogo de movimento corporal. Basicamente, você acessa o jogo se registrando com um usuário e senha e, após clicar no botão \"Play\", o jogo abre sua câmera e divide ela em uma matrix 3x3 onde cada célula representa uma posição possível. Após isso, é exibida uma imagem e dois pontos representando a posição que você deve ficar e o jogador deve, em menos de um segundo, se adequar a posição exibida na imagem. As imagens são trocadas de segundo em segundo e, enquanto o jogador conseguir se adequar à sequência de movimentos e posições, ele ganha ponto, mas, se errar uma posição, o jogador perde.",
+        imgUrl: movevisionImage,
+        link: "https://drive.google.com/uc?export=download&id=10Nn2CweBseQXDJcFYNS5_gH6jg76ZDvZ",
+      }
+    ],
+    second: [
+      {
         title: "Identificador de sinais",
         description: "I.A. & Detecção",
         videoUrl: "https://www.youtube.com/embed/8vme6-fE6Is",
         explanation: "Este projeto utiliza visão computacional para identificar sinais feitos com a mão, permitindo que o computador identifique os número 1, 2, 3, 4 e 5 quando sinalizados. A aplicação foi desenvolvida utilizando Python, OpenCV e Mediapipe.",
         imgUrl: identificadordesinaisImage,
         link: "https://drive.google.com/uc?export=download&id=17gk1EKBWCM57YRzva9Qu6VBc1qBtENYD",
-      },
-    ],
-    second: [
-      {
-        title: "Controlador de volume visual",
-        description: "I.A. & Detecção",
-        videoUrl: "https://www.youtube.com/embed/cP1zfRaG5C4",
-        explanation:
-          "Este projeto utiliza visão computacional para identificar sinais feitos com a mão e, por meio desses sinais, controlar o volume do computador. O software mede a distância entre o dedo indicador e o polegar e utiliza essa distância para controlar o volume. A aplicação foi desenvolvida utilizando Python, OpenCV, Mediapipe e outras tecnologias.",
-        imgUrl: controladorvisualdevolumeImage,
-        link: "https://drive.google.com/uc?export=download&id=1GMCnOPuk8kCGzM1yHKUIoCY_bm4ZvceK",
       },
       {
         title: "I.A. personal trainer",
@@ -117,10 +118,29 @@ export const projects = {
         link: "https://drive.google.com/file/d/1QrS7uU3oZpYo0OXAY9dzTMdYV8xvlnjz/view?usp=drive_link",
       },
     ],
-    third: [],
+    third: [
+      {
+        title: "Controlador de volume visual",
+        description: "I.A. & Detecção",
+        videoUrl: "https://www.youtube.com/embed/cP1zfRaG5C4",
+        explanation:
+          "Este projeto utiliza visão computacional para identificar sinais feitos com a mão e, por meio desses sinais, controlar o volume do computador. O software mede a distância entre o dedo indicador e o polegar e utiliza essa distância para controlar o volume. A aplicação foi desenvolvida utilizando Python, OpenCV, Mediapipe e outras tecnologias.",
+        imgUrl: controladorvisualdevolumeImage,
+        link: "https://drive.google.com/uc?export=download&id=1GMCnOPuk8kCGzM1yHKUIoCY_bm4ZvceK",
+      }
+    ],
   },
   GUI: {
-    first: [],
+    first: [
+      {
+        title: "Cadastro de clientes",
+        description: "Desktop & Banco de dados",
+        videoUrl: "https://www.youtube.com/embed/N406Ala4tyk",
+        explanation: "Este projeto consiste em uma aplicação desktop que permite qualquer pessoa gerenciar sua lista de clientes do seu negócio. A aplicação exibe, em uma tabela, os clientes cadastrados e permite deletar, pesquisar e inserir novos clientes na tabela. É extremamente intuitívo, leve e qualquer um pode usar!",
+        imgUrl: cadastrodeclientesImage,
+        link: "https://drive.google.com/uc?export=download&id=1bbjuUBhrgIxssiIYxmPIIR3IyyfpB-Ye",
+      },
+    ],
     second: [],
     third: [],
   },

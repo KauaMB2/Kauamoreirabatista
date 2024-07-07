@@ -66,9 +66,21 @@ export const WebProjectCard = ({
         <ProjectModal
           projectModal={projectModal}
           setProjectModal={setProjectModal}
+          title={title}
+          description={description}
+          explanation={explanation}
+          imgUrl={imgUrl}
+          videoUrl={videoUrl}
+          link={link}
         />
         <Col size={12} sm={6} md={4}>
-          <a target="_blank" rel="noreferrer" href={link}>
+          <button
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => {
+              setProjectModal(true);
+            }}
+          >
             <div className="proj-imgbx">
               <img src={imgUrl} alt={title} />
               <div className="proj-txtx">
@@ -76,7 +88,7 @@ export const WebProjectCard = ({
                 <span>{description}</span>
               </div>
             </div>
-          </a>
+          </button>
         </Col>
       </>
     );
