@@ -376,18 +376,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 70% !important;
   }
 }
-@media (max-width: 600px) {
+@media ((min-device-width: 400px) and (max-device-width: 600px)) {
   .pill-categories {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   #pills-categories{
     height: 10% !important;
   }
   .pill-tabs {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   #pills-tabs{
     height: 10% !important;
+  }
+  .logoFooter{
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .pill-categories {
+    font-size: 10px !important;
+  }
+  .pill-tabs {
+    font-size: 10px !important;
   }
   .logoFooter{
     display: none;
