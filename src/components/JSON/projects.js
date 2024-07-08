@@ -73,7 +73,7 @@ export const projects = {
         videoUrl: "https://www.youtube.com/embed/QCRcDWnEPDg",
         explanation: "Este projeto é uma interface gráfica desenvolvida que permite efetuar o reconhecimento de faces em fotos e pela webcam além do cadastro de novas faces e treinamento da inteligência artificial para identificação de novas faces. A aplicação foi desenvolvida utilizando Python, OpenCV, Haarcascade e Tkinter.",
         imgUrl: reconhecimentofacialImage,
-        link: "https://drive.google.com/uc?export=download&id=1tLs21bLTfcNBbDps9ywzQA2TYAbQQ-4Q",
+        link: "https://drive.google.com/uc?export=download&id=1EBi1P63DkbQmKV0pG38kTlQvoXLXi6rQ",
       },
       {
         title: "Paint visual",
@@ -136,7 +136,7 @@ export const projects = {
         title: "Cadastro de clientes",
         description: "Desktop & Banco de dados",
         videoUrl: "https://www.youtube.com/embed/N406Ala4tyk",
-        explanation: "Este projeto consiste em uma aplicação desktop que permite qualquer pessoa gerenciar sua lista de clientes do seu negócio. A aplicação exibe, em uma tabela, os clientes cadastrados e permite deletar, pesquisar e inserir novos clientes na tabela. É extremamente intuitívo, leve e qualquer um pode usar!",
+        explanation: "Este projeto consiste em uma aplicação desktop que permite qualquer pessoa gerenciar sua lista de clientes do seu negócio. A aplicação exibe, em uma tabela, os clientes cadastrados e permite deletar, pesquisar e inserir novos clientes na tabela. É extremamente intuitivo, leve e qualquer um pode usar!",
         imgUrl: cadastrodeclientesImage,
         link: "https://drive.google.com/uc?export=download&id=1bbjuUBhrgIxssiIYxmPIIR3IyyfpB-Ye",
       },

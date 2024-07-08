@@ -5,7 +5,6 @@ import CPlusPlusImage from "../../assets/img/languagesIcons/CPlusPlus.png";
 import CSharpImage from "../../assets/img/languagesIcons/CSharp.png";
 import CSSImage from "../../assets/img/languagesIcons/CSS.png";
 import DjangoImage from "../../assets/img/languagesIcons/Django.png";
-import ExpressImage from "../../assets/img/languagesIcons/Express.png";
 import FirebaseImage from "../../assets/img/languagesIcons/Firebase.png";
 import FlaskImage from "../../assets/img/languagesIcons/Flask.png";
 import GoogleMapsImage from "../../assets/img/languagesIcons/GoogleMaps.png";
@@ -39,10 +38,6 @@ export const iconsArray=[
         {
           "image": DjangoImage,
           "name": "Django"
-        },
-        {
-          "image": ExpressImage,
-          "name": "Express"
         },
         {
           "image": FlaskImage,
