@@ -21,12 +21,12 @@ export const Comments = () => {
         <div className="comments-grid">
           {initialComments.map((comment, index) => (
             <div key={index} className="comment-main-level">
-              <div className="comment-avatar">
+              <a target='__blank' href={comment.link} className="comment-avatar">
                 <img src={comment.avatar} alt={comment.name} />
-              </div>
+              </a>
               <div className="comment-box">
                 <div className="comment-head">
-                  <h6 className="comment-name"><a href="#">{comment.name}</a></h6>
+                  <h6 className="comment-name"><a target='__blank' href={comment.link}>{comment.name} - @{comment.arrouba}</a></h6>
                 </div>
                 <div className="comment-content">{comment.content}</div>
               </div>

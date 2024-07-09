@@ -815,9 +815,9 @@ button .proj-imgbx:hover .proj-txtx {
   background-color: #000;
   padding: 40px 20px;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-row: 20% 10% 70%;
 }
 
 .gradient-outline-btn:focus {
@@ -842,15 +842,14 @@ button .proj-imgbx:hover .proj-txtx {
   max-width: 800px; /* Limit max width */
   overflow: hidden;
   transition: max-height 2s ease-out; /* Transition for sliding effect (2 seconds) */
-  max-height: 1000px; /* Large enough to fit all comments when expanded */
 }
 
 .comments-container.slide-up {
-  max-height: 200px; /* Adjust based on the height of one comment */
+  max-height: auto; /* Adjust based on the height of one comment */
 }
 
 .comments-container.slide-down {
-  max-height: 1000px; /* Large enough to fit all comments when expanded */
+  max-height: auto; /* Large enough to fit all comments when expanded */
 }
 
 .comments-grid {
@@ -901,7 +900,7 @@ button .proj-imgbx:hover .proj-txtx {
 }
 
 .comment-name a {
-  color: #4a2fbd;
+  color: color(192, 0, 160);
   text-decoration: none;
 }
 
