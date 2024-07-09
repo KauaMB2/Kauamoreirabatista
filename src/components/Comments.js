@@ -1,30 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { commentsData } from "./JSON/commentsData";
 
 export const Comments = () => {
   const [open, setOpen] = useState(false);
-
-  const commentsData = [
-    {
-      avatar: 'http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg',
-      name: 'Lorena Rojero',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?',
-    },
-    {
-      avatar: 'http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg',
-      name: 'John Doe',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?',
-    },
-    {
-      avatar: 'http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg',
-      name: 'Jane Smith',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?',
-    },
-    // Adicione mais comentários conforme necessário
-  ];
-
   const initialComments = open ? commentsData : [commentsData[0]];
-
   return (
     <div className="comments">
       <h2>Relatos</h2>

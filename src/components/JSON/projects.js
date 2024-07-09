@@ -33,7 +33,7 @@ export const projects = {
         title: "Infrareport",
         description: "Frontend & Design",
         imgUrl: infrareportImage,
-        link: "https://infrareport-react-2023.vercel.app",
+        link: "https://infrareportfrontend.vercel.app",
       },
     ],
     second: [

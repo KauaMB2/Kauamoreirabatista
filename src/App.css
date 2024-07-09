@@ -913,20 +913,18 @@ button .proj-imgbx:hover .proj-txtx {
   border-radius: 0 0 4px 4px;
 }
 .gradient-button {
-  background: -webkit-linear-gradient(left top, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
-  background: linear-gradient(to right bottom, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 0.6em 1.2em;
+  border-radius: 0.375em;
   cursor: pointer;
-  transition: background 0.3s ease;
+  color: white;
+  background: linear-gradient(to right bottom, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.9s;
 }
 
 .gradient-button:hover {
-  background: -webkit-linear-gradient(left top, rgb(160, 0, 192) 0%, rgb(0, 38, 255) 100%);
-  background: linear-gradient(to right bottom, rgb(160, 0, 192) 0%, rgb(0, 38, 255) 100%);
+  background-position: 0 0;
 }
 
 /** =====================
