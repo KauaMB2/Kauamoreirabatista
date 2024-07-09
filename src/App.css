@@ -412,7 +412,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
-.project h2 {
+.project h2, .comments h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
@@ -808,4 +808,132 @@ button .proj-imgbx:hover .proj-txtx {
 .social-icon-footer .social-link-text p:hover{
   color: #4A2FBD;
   text-decoration: underline;
+}
+
+/***************** Comments ***************/
+.comments {
+  background-color: #000;
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient-outline-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(74, 47, 189, 0.5);
+}
+
+.comments-collapse-div-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Margin to separate button from comments */
+}
+
+.comments-title {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.comments-container {
+  width: 100%;
+  max-width: 800px; /* Limit max width */
+  overflow: hidden;
+  transition: max-height 2s ease-out; /* Transition for sliding effect (2 seconds) */
+  max-height: 1000px; /* Large enough to fit all comments when expanded */
+}
+
+.comments-container.slide-up {
+  max-height: 200px; /* Adjust based on the height of one comment */
+}
+
+.comments-container.slide-down {
+  max-height: 1000px; /* Large enough to fit all comments when expanded */
+}
+
+.comments-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for centering */
+  grid-gap: 20px;
+}
+
+.comment-main-level {
+  display: flex;
+  gap: 1.2em;
+  align-items: flex-start;
+}
+
+.comment-avatar {
+  width: 65px;
+  height: 65px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.comment-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-box {
+  flex: 1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-head {
+  background: #151515;
+  padding: 0.7em;
+  border-bottom: 1px solid #e5e5e5;
+  color: white;
+  border-radius: 4px 4px 0 0;
+}
+
+.comment-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.comment-name a {
+  color: #4a2fbd;
+  text-decoration: none;
+}
+
+.comment-content {
+  background: #151515;
+  padding: 12px;
+  font-size: 15px;
+  color: white;
+  border-radius: 0 0 4px 4px;
+}
+.gradient-button {
+  background: -webkit-linear-gradient(left top, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
+  background: linear-gradient(to right bottom, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gradient-button:hover {
+  background: -webkit-linear-gradient(left top, rgb(160, 0, 192) 0%, rgb(0, 38, 255) 100%);
+  background: linear-gradient(to right bottom, rgb(160, 0, 192) 0%, rgb(0, 38, 255) 100%);
+}
+
+/** =====================
+ * Responsive
+ ========================*/
+@media only screen and (max-width: 766px) {
+  .comments-container {
+    padding: 0 10px; /* Padding for small screens */
+  }
 }
