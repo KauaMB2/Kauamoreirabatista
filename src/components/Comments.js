@@ -5,8 +5,8 @@ export const Comments = () => {
   const [open, setOpen] = useState(false);
   const initialComments = open ? commentsData : [commentsData[0]];
   return (
-    <div className="comments">
-      <h2>Relatos</h2>
+    <section id='feedbacks' className="comments">
+      <h2>Feedbacks</h2>
       <div className="comments-collapse-div-button">
         <button
           className="gradient-button"
@@ -34,6 +34,6 @@ export const Comments = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

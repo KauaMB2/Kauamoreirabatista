@@ -48,12 +48,12 @@ p, a, li, button, ul {
   line-height: normal;
   text-decoration: none;
 }
-
 .logoDiv{
   background: -webkit-linear-gradient(left top, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%);
   border-radius: 100%;
   padding: 4px;
 }
+
 
 a:hover {
   text-decoration: none;
@@ -107,7 +107,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 20px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -129,7 +129,8 @@ span.navbar-text {
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
     align-items: center;
     justify-content: center;
     line-height: 1;
@@ -408,9 +409,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
   position: relative;
   background-color: black;
+
 }
 .project h2, .comments h2 {
 	font-size: 45px;
@@ -812,105 +817,76 @@ button .proj-imgbx:hover .proj-txtx {
 
 /***************** Comments ***************/
 .comments {
-  background-color: #000;
-  padding: 40px 20px;
-  color: white;
-  display: grid;
-  grid-template-columns: auto;
-  grid-row: 20% 10% 70%;
-}
-
-.gradient-outline-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(74, 47, 189, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: black;
 }
 
 .comments-collapse-div-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Margin to separate button from comments */
-}
-
-.comments-title {
-  font-size: 36px;
-  color: #fff;
-  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 800px; /* Limit max width */
-  overflow: hidden;
-  transition: max-height 2s ease-out; /* Transition for sliding effect (2 seconds) */
-}
-
-.comments-container.slide-up {
-  max-height: auto; /* Adjust based on the height of one comment */
-}
-
-.comments-container.slide-down {
-  max-height: auto; /* Large enough to fit all comments when expanded */
 }
 
 .comments-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column for centering */
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .comment-main-level {
   display: flex;
-  gap: 1.2em;
-  align-items: flex-start;
-}
-
-.comment-avatar {
-  width: 65px;
-  height: 65px;
-  border: 3px solid #fff;
-  border-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .comment-avatar img {
-  width: 100%;
-  height: 100%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  background: linear-gradient(white, white), linear-gradient(215deg, rgb(192, 0, 160) 0%, rgb(38, 0, 255) 100%); /* Gradient border */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-right: 0.8rem;
 }
 
 .comment-box {
-  flex: 1;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 65px); /* Adjust width based on avatar size */
+  background-color: #151515;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
 }
 
 .comment-head {
-  background: #151515;
-  padding: 0.7em;
-  border-bottom: 1px solid #e5e5e5;
-  color: white;
-  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-
-.comment-name {
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.comment-name a {
-  color: color(192, 0, 160);
+.comment-name a{
   text-decoration: none;
 }
-
-.comment-content {
-  background: #151515;
-  padding: 12px;
-  font-size: 15px;
-  color: white;
-  border-radius: 0 0 4px 4px;
+.comment-name a:hover{
+  text-decoration: underline;
 }
+.comment-content {
+  margin-top: 5px;
+}
+
 .gradient-button {
   padding: 0.6em 1.2em;
   border-radius: 0.375em;
@@ -924,13 +900,4 @@ button .proj-imgbx:hover .proj-txtx {
 
 .gradient-button:hover {
   background-position: 0 0;
-}
-
-/** =====================
- * Responsive
- ========================*/
-@media only screen and (max-width: 766px) {
-  .comments-container {
-    padding: 0 10px; /* Padding for small screens */
-  }
 }
