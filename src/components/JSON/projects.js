@@ -115,7 +115,7 @@ export const projects = {
         videoUrl: "https://www.youtube.com/embed/Zy6PrwxwyAM",
         explanation: "Este projeto utiliza visão computacional para identificar sinais feitos com a mão e, por meio desses sinais, controlar o cursor do mouse e até dar cliques. Muitas vezes em filmes de ficção nós víamos as pessoas interagindo com as telas dos computadores utilizando as próprias mãos. Sendo assim, a ideia desse projeto é nos proximar um pouco dessa realidade. Se você levantar somente o dedo indicador, o software entenderá que você quer mover o cursor do mouse e, se você levantar dedo indicador e o dedo médio juntos, o software entenderá que você quer dar um clique na tela. A aplicação foi desenvolvida utilizando Python, OpenCV, Mediapipe e outras tecnologias.",
         imgUrl: mousevisualImage,
-        link: "https://drive.google.com/file/d/1QrS7uU3oZpYo0OXAY9dzTMdYV8xvlnjz/view?usp=drive_link",
+        link: "https://drive.google.com/uc?export=download&id=1QrS7uU3oZpYo0OXAY9dzTMdYV8xvlnjz",
       },
     ],
     third: [

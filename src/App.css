@@ -874,10 +874,14 @@ button .proj-imgbx:hover .proj-txtx {
 
 .comment-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   width: 100%;
 }
 .comment-name a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
   text-decoration: none;
 }
 .comment-name a:hover{
