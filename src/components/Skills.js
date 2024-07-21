@@ -1,11 +1,9 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 import { iconsArray } from "./JSON/languageIcons";
 import { responsiveSkills } from "./JSON/responsiveSkills"
+import { skillsArray } from "./JSON/skillsData"
 import { responsiveLanguages } from "./JSON/responsiveLanguages"
 
 export const Skills = () => {
@@ -31,26 +29,12 @@ export const Skills = () => {
                           ))}
                         </Carousel>
                         <Carousel responsive={responsiveSkills} infinite={true} className="owl-carousel owl-theme skill-slider">
+                          {skillsArray.map((skill, index) => (
                             <div className="item">
-                                <img src={meter3} alt="Web Development" />
-                                <h5>Desenvolvimento fullstack</h5>
+                              <img src={skill["meter"]} alt={skill["text"]} />
+                              <h5>{skill["text"]}</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter2} alt="Brand Identity" />
-                                <h5>Identidade de marca</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Logo Design" />
-                                <h5>Design de logo</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Computer Vision" />
-                                <h5>Visão Computacional</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Desktop Development" />
-                                <h5>Desenvolvimento Desktop</h5>
-                            </div>
+                          ))}
                         </Carousel>
                     </div>
                 </div>

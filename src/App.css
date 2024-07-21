@@ -369,12 +369,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 3em;
   height: 3em;
 }
+
+
 @media (max-width: 768px) {
   #pills-categories{
-    width: 90% !important;
+    width: 100% !important;
   }
   #pills-tabs{
     width: 70% !important;
+  }
+  .pill-categories{
+    font-size: 15px !important;
   }
 }
 @media ((min-device-width: 400px) and (max-device-width: 600px)) {
@@ -432,7 +437,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -447,6 +452,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 #pills-tabs{
   height: 10%;
+}
+.nav-item-categories{
+  width: 25%;
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -482,21 +490,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
 }
-.nav-link#projects-tabs-tab-first {
+.nav-link#projects-tabs-tab-1 {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
-.nav-link#projects-tabs-tab-second {
+.nav-link#projects-tabs-tab-2 {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.nav-link#projects-tabs-tab-third {
+.nav-link#projects-tabs-tab-3 {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
 .nav-link#categories-tabs-tab-web_development {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
+}
+.nav-link#categories-tabs-tab-eletronic {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-link#categories-tabs-tab-computer_vision {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -846,7 +859,7 @@ button .proj-imgbx:hover .proj-txtx {
 
 .comment-main-level {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   width: 100%;
 }

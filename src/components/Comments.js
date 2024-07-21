@@ -8,21 +8,10 @@ export const Comments = () => {
     <section id='feedbacks' className="comments">
       <div className='container'>
       <h2>Feedbacks</h2>
-      <div className="comments-collapse-div-button">
-        <button
-          className="gradient-button"
-          onClick={() => setOpen(!open)}
-          aria-controls="example-collapse-text"
-          aria-expanded={open}
-        >
-          {open ? 'Mostrar menos' : 'Mostrar todos'}
-        </button>
-      </div>
       <div className={`comments-container ${open ? 'slide-down' : 'slide-up'}`}>
         <div className="comments-grid">
           {initialComments.map((comment, index) => (
             <div key={index} className="comment-main-level">
-              
               <div className="comment-box">
                 <div className="comment-head">
                   <a target='__blank' href={comment.link} className="comment-avatar">
@@ -34,6 +23,16 @@ export const Comments = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="comments-collapse-div-button">
+          <button
+            className="gradient-button"
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+          >
+            {open ? 'Mostrar menos' : 'Mostrar todos'}
+          </button>
         </div>
       </div>
       </div>

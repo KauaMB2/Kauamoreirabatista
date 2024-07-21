@@ -10,87 +10,54 @@ export const WebProjectCard = ({
   link,
   videoUrl,
   category,
+  isDownloadable,
+  haveModal
 }) => {
-  const [projectModal, setProjectModal] = useState(false);
-  if (category === "web_development") {
-    return (
-      <>
-        <Col size={12} sm={6} md={4}>
-          <a target="_blank" rel="noreferrer" href={link}>
-            <div className="proj-imgbx">
-              <img src={imgUrl} alt={title} />
-              <div className="proj-txtx">
-                <h4>{title}</h4>
-                <span>{description}</span>
-              </div>
-            </div>
-          </a>
-        </Col>
-      </>
-    );
-  } else if (category === "computer_vision") {
-    return (
-      <>
-        <ProjectModal
-          projectModal={projectModal}
-          setProjectModal={setProjectModal}
-          title={title}
-          description={description}
-          explanation={explanation}
-          imgUrl={imgUrl}
-          videoUrl={videoUrl}
-          link={link}
-        />
-        <Col size={12} sm={6} md={4}>
-          <button
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => {
-              setProjectModal(true);
-            }}
-          >
-            <div className="proj-imgbx">
-              <img src={imgUrl} alt={title} />
-              <div className="proj-txtx">
-                <h4>{title}</h4>
-                <span>{description}</span>
-              </div>
-            </div>
-          </button>
-        </Col>
-      </>
-    );
-  } else if (category === "GUI") {
-    return (
-      <>
-        <ProjectModal
-          projectModal={projectModal}
-          setProjectModal={setProjectModal}
-          title={title}
-          description={description}
-          explanation={explanation}
-          imgUrl={imgUrl}
-          videoUrl={videoUrl}
-          link={link}
-        />
-        <Col size={12} sm={6} md={4}>
-          <button
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => {
-              setProjectModal(true);
-            }}
-          >
-            <div className="proj-imgbx">
-              <img src={imgUrl} alt={title} />
-              <div className="proj-txtx">
-                <h4>{title}</h4>
-                <span>{description}</span>
-              </div>
-            </div>
-          </button>
-        </Col>
-      </>
-    );
+  const [projectModal, setProjectModal] = useState(false)
+  const processClick=()=>{
+    if (haveModal){
+      setProjectModal(true)
+      return
+    }
+    if (category==="web_development" && link !== undefined){
+      window.open(
+        link,
+        '_blank' // <- This is what makes it open in a new window.
+      )
+    }
   }
-};
+  return (
+    <>
+      {
+        haveModal && (
+          <ProjectModal
+            projectModal={projectModal}
+            setProjectModal={setProjectModal}
+            title={title}
+            description={description}
+            explanation={explanation}
+            imgUrl={imgUrl}
+            videoUrl={videoUrl}
+            link={link}
+            isDownloadable={isDownloadable}
+          />
+        )
+      }
+      <Col size={12} sm={6} md={4}>
+        <button
+          target="_blank"
+          rel="noreferrer"
+          onClick={processClick}
+        >
+          <div className="proj-imgbx">
+            <img src={imgUrl} alt={title} />
+            <div className="proj-txtx">
+              <h4>{title}</h4>
+              <span>{description}</span>
+            </div>
+          </div>
+        </button>
+      </Col>
+    </>
+  )
+}
