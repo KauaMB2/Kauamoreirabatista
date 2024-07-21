@@ -83,7 +83,7 @@ export const Banner = () => {
           <TrackVisibility>
             <div className="wrapper">
               <div className="h_iframe">
-                <iframe title="Vídeo de apresentação" height='465px' width='470px' src="https://www.youtube.com/embed/Yri1QBEo8Fs"></iframe>
+                <iframe allow="fullscreen;" title="Vídeo de apresentação" height='465px' width='470px' src="https://www.youtube.com/embed/Yri1QBEo8Fs" allowFullScreen></iframe>
               </div>
             </div>
             <p>

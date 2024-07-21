@@ -18,7 +18,7 @@ export function ProjectModal({
       <Modal.Body className="modalBackground">
         <div className="wrapper">
           <div className="h_iframe">
-            <iframe title={title} height='465px' width='470px' src={videoUrl}></iframe>
+            <iframe allow="fullscreen;" title={title} height='465px' width='470px' src={videoUrl} allowFullScreen></iframe>
           </div>
         </div>
         <p dangerouslySetInnerHTML={{ __html: explanation }} />
