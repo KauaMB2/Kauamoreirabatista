@@ -17,6 +17,7 @@ import movevisionImage from "../../assets/img/movevisionImage.png";
 import cadastrodeclientesImage from "../../assets/img/cadastrodeclientesImage.png";
 import vsmeterImage from "../../assets/img/vsmeterImage.png";
 import cepegImage from "../../assets/img/cepegImage.png";
+import iPhoneImage from "../../assets/img/iphone15Image.png";
 
 export const projects = {
   categories: ["web_development", "computer_vision", "eletronic", "GUI"],
@@ -66,13 +67,13 @@ export const projects = {
         haveModal: false,
       },
       {
-        title: "Save the planet",
-        description: "Jogo & Entretenimento",
-        imgUrl: savetheplanetImage,
-        link: "https://savetheplanetkaua.netlify.app",
+        title: "iPhone 15 Pro",
+        description: "Frontend & 3D",
+        imgUrl: iPhoneImage,
+        link: "https://appleiphone15prokaua.vercel.app",
         isDownloadable: false,
         haveModal: false,
-      },
+      }
     ],
     3: [
       {
@@ -80,6 +81,14 @@ export const projects = {
         description: "Jogo & Entretenimento",
         imgUrl: pongImage,
         link: "https://pongkaua.netlify.app",
+        isDownloadable: false,
+        haveModal: false,
+      },
+      {
+        title: "Save the planet",
+        description: "Jogo & Entretenimento",
+        imgUrl: savetheplanetImage,
+        link: "https://savetheplanetkaua.netlify.app",
         isDownloadable: false,
         haveModal: false,
       },
