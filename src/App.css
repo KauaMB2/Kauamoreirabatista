@@ -371,7 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #pills-categories{
     width: 100% !important;
   }
@@ -382,7 +382,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 15px !important;
   }
 }
-@media ((min-device-width: 400px) and (max-device-width: 600px)) {
+@media ((min-device-width: 510px) and (max-device-width: 770px)) {
   .pill-categories {
     font-size: 12px !important;
   }
@@ -399,9 +399,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media ((min-device-width: 430px) and (max-device-width: 510px)) {
   .pill-categories {
     font-size: 10px !important;
+  }
+}
+@media (max-width: 430px) {
+  .pill-categories {
+    font-size: 8px !important;
   }
   .pill-tabs {
     font-size: 10px !important;
@@ -454,7 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 10%;
 }
 .nav-item-categories{
-  width: 25%;
+  width: 20%;
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -508,12 +513,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#categories-tabs-tab-eletronic {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-link#categories-tabs-tab-computer_vision {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#categories-tabs-tab-mobile {
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-link#categories-tabs-tab-GUI {
   border: 1px solid rgba(255, 255, 255, 0.5);

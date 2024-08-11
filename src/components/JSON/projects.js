@@ -18,9 +18,10 @@ import cadastrodeclientesImage from "../../assets/img/cadastrodeclientesImage.pn
 import vsmeterImage from "../../assets/img/vsmeterImage.png";
 import cepegImage from "../../assets/img/cepegImage.png";
 import iPhoneImage from "../../assets/img/iphone15Image.png";
+import infrareportmobileImage from "../../assets/img/infrareportmobileImage.png";
 
 export const projects = {
-  categories: ["web_development", "computer_vision", "eletronic", "GUI"],
+  categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
   divisions: [1, 2, 3],
   web_development: {
     1: [
@@ -201,6 +202,21 @@ export const projects = {
         link: "https://drive.google.com/uc?export=download&id=1mngN_lPacXToiosybKPrYv9ibA89ZlGp",
       }
     ]
+  },
+  mobile:{
+    1: [
+      {
+        title: "Infrareport Mobile",
+        description: "Mobile & Google Maps",
+        videoUrl: "https://www.youtube.com/embed/uwNhWWjUgpk",
+        explanation: "Por acaso, já encontrou algum problema de infraestrutura na sua cidade enquanto caminhava na rua? Provavelmente, todo dia. Com a dificuldade que os cidadãos encontram de reportar tais problemas, torna-se difícil a localização dos problemas urbanos por parte da prefeitura. Foi pensando nisso que o Infrareport foi criado. A ideia é, por meio de um aplicativo mobile, permitir com que qualquer cidadão de qualquer cidade do Brasil reporte problemas de infraestrutura da sua cidade para a prefeitura de forma rápida e fácil utilizando a API do Google Maps para localizar as ocorrências.",
+        imgUrl: infrareportmobileImage,
+        isDownloadable: false,
+        haveModal: true,
+      }
+    ],
+    2: [],
+    3: []
   },
   eletronic: {
     1: [

@@ -9,7 +9,6 @@ import { projects } from "./JSON/projects";
 export const Projects = () => {
   const [tab, setTab] = useState(1);
   const [category, setCategory] = useState('web_development');
-
   return (
     <section className="project" id="projects">
       <Container>
@@ -25,6 +24,9 @@ export const Projects = () => {
                       </Nav.Item>
                       <Nav.Item class="nav-item-categories">
                         <Nav.Link className="pill-categories" eventKey="computer_vision">I.A. e Visão<br />Computacional</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item class="nav-item-categories">
+                        <Nav.Link className="pill-categories" eventKey="mobile">Aplicações<br />Mobile</Nav.Link>
                       </Nav.Item>
                       <Nav.Item class="nav-item-categories">
                         <Nav.Link className="pill-categories" eventKey="eletronic">Eletrônica e <br />IoT</Nav.Link>
