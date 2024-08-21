@@ -18,7 +18,9 @@ import cadastrodeclientesImage from "../../assets/img/cadastrodeclientesImage.pn
 import vsmeterImage from "../../assets/img/vsmeterImage.png";
 import cepegImage from "../../assets/img/cepegImage.png";
 import iPhoneImage from "../../assets/img/iphone15Image.png";
+import jogodavelhaImage from "../../assets/img/jogodavelhaImage.png";
 import infrareportmobileImage from "../../assets/img/infrareportmobileImage.png";
+import jogodaforcaImage from "../../assets/img/jogodaforcaImage.png";
 
 export const projects = {
   categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
@@ -49,8 +51,6 @@ export const projects = {
         isDownloadable: false,
         haveModal: false,
       },
-    ],
-    2: [
       {
         title: "Infrareport API",
         description: "Backend & REST API",
@@ -63,7 +63,7 @@ export const projects = {
         title: "Team allocation",
         description: "Frontend & Empresas",
         imgUrl: teamallocationImage,
-        link: "https://team-allocation-frontend.vercel.app",
+        link: "https://teamallocation.vercel.app",
         isDownloadable: false,
         haveModal: false,
       },
@@ -76,7 +76,7 @@ export const projects = {
         haveModal: false,
       }
     ],
-    3: [
+    2: [
       {
         title: "PONG",
         description: "Jogo & Entretenimento",
@@ -90,6 +90,25 @@ export const projects = {
         description: "Jogo & Entretenimento",
         imgUrl: savetheplanetImage,
         link: "https://savetheplanetkaua.netlify.app",
+        isDownloadable: false,
+        haveModal: false,
+      },
+      {
+        title: "Jogo da velha",
+        description: "Jogo & Entretenimento",
+        imgUrl: jogodavelhaImage,
+        link: "https://tictactoekaua.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      }
+    ],
+    3: [
+      
+      {
+        title: "Jogo da forca",
+        description: "Jogo & Entretenimento",
+        imgUrl: jogodaforcaImage,
+        link: "https://hangmankaua.vercel.app",
         isDownloadable: false,
         haveModal: false,
       },
