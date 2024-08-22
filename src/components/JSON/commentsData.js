@@ -1,9 +1,26 @@
 import cauafrancoPicture from "../../assets/img/comments/cauafranco.png"
+import eduardoht from "../../assets/img/comments/eduardoht.png"
+import ojuliocode from "../../assets/img/comments/ojuliocode.jpg"
 import fabiohenriquePicture from "../../assets/img/comments/fabiohenrique.png"
 import joaofrancisco from "../../assets/img/comments/joaofrancisco.png"
 import matheusalencar from "../../assets/img/comments/matheusalencar.png"
 
-export const commentsData=[{
+export const commentsData=[
+        {
+          avatar: eduardoht,
+          name: 'Eduardo Henrique Teixeira, Especialista em Sistemas e Doutorando no Instituto Nacional de Telecomunicações',
+          link: 'https://www.instagram.com/eduardohteixeira/',
+          arrouba: 'eduardohteixeira',
+          content: 'Descobri o trabalho do Kauã através do LinkedIn, onde pude observar diversos projetos desenvolvidos por ele. Cada um desses projetos utilizava diferentes modelos e bibliotecas, me mostrando logo de inicio que ele é um profissional extremamente versátil. Depois que comecei a acompanhar seu trabalho mais de perto, percebi que ele não apenas possui um conhecimento superficial das bibliotecas que utiliza, mas também é capaz de modificar seu funcionamento interno para alcançar os objetivos propostos com maior eficiência. Essa habilidade, incomum para alguém no início da universidade, destacou outras duas características excepcionais: sua persistência em buscar soluções muito além do que é ensinado em um curso de graduação e sua facilidade em absorver conhecimento de diversas fontes, indo além da instrução formal.',
+        },
+        {
+          avatar: ojuliocode,
+          name: 'Júlio Juriolli, desenvolvedor de software da Leucotron',
+          link: 'https://www.instagram.com/ojuliocode/',
+          arrouba: 'ojuliocode',
+          content: 'Kaua é um excelente profissional, com experiência em diversas tecnologias. Trabalhamos juntos e posso garantir que é excelente em aprender novas coisas e desenvolver projetos criativos. Ótimas habilidades em solução de problemas.',
+        },
+        {
           avatar: cauafrancoPicture,
           name: 'Cauã Franco, vendedor da Confio EPI\'s',
           link: 'https://www.instagram.com/cauafranco_/',
@@ -26,7 +43,7 @@ export const commentsData=[{
         },
         {
           avatar: matheusalencar,
-          name: 'Matheus Alencar, desenvolvedor da Leucotron',
+          name: 'Matheus Alencar, desenvolvedor de software da Leucotron',
           link: 'https://www.instagram.com/matheuz_alencar/',
           arrouba: 'matheuz_alencar',
           content: 'Kauã é um aluno brilhante com muita dedicação e afinco pelo desenvolvimento. Nas experiências que tivemos trabalhando juntos na faculdade não pude deixar de notar seu grande domínio técnico da área da programação assim como sua versatilidade para várias áreas. Com certeza sua tendência é se tornar um profissional de destaque cada vez maior.',

@@ -103,7 +103,6 @@ export const projects = {
       }
     ],
     3: [
-      
       {
         title: "Jogo da forca",
         description: "Jogo & Entretenimento",
