@@ -4,14 +4,22 @@ import ojuliocode from "../../assets/img/comments/ojuliocode.jpg"
 import fabiohenriquePicture from "../../assets/img/comments/fabiohenrique.png"
 import joaofrancisco from "../../assets/img/comments/joaofrancisco.png"
 import matheusalencar from "../../assets/img/comments/matheusalencar.png"
+import jaineamaral from "../../assets/img/comments/jaineamaral.png"
 
 export const commentsData=[
         {
           avatar: eduardoht,
-          name: 'Eduardo Henrique Teixeira, Especialista em Sistemas e Doutorando no Instituto Nacional de Telecomunicações',
+          name: 'Eduardo Henrique Teixeira, especialista em Sistemas e Doutorando no Instituto Nacional de Telecomunicações',
           link: 'https://www.instagram.com/eduardohteixeira/',
           arrouba: 'eduardohteixeira',
           content: 'Descobri o trabalho do Kauã através do LinkedIn, onde pude observar diversos projetos desenvolvidos por ele. Cada um desses projetos utilizava diferentes modelos e bibliotecas, me mostrando logo de inicio que ele é um profissional extremamente versátil. Depois que comecei a acompanhar seu trabalho mais de perto, percebi que ele não apenas possui um conhecimento das bibliotecas que utiliza, mas também é capaz de modificar seu funcionamento interno para alcançar os objetivos propostos com maior eficiência. Essa habilidade, incomum para alguém no início da universidade, destacou outras duas características excepcionais: sua persistência em buscar soluções muito além do que é ensinado em um curso de graduação e sua facilidade em absorver conhecimento de diversas fontes, indo além da instrução formal.',
+        },
+        {
+          avatar: jaineamaral,
+          name: 'Jaíne Amaral, fundadora da Plan Way e Head de operações do Hacktown',
+          link: 'https://www.instagram.com/_jaineamaral/',
+          arrouba: '_jaineamaral',
+          content: 'Kauã é movido por desafios. Sua dedicação e persistência inspiram e sua proatividade é destaque por onde passa. Em minha experiência de voluntariado com Kauã, ele desempenhou muito bem sua função de líder e coordenador de equipe com engajamento constante, adaptação aos cenários com muita inteligência e carisma.',
         },
         {
           avatar: ojuliocode,
