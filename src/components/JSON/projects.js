@@ -45,7 +45,7 @@ export const projects = {
       },
       {
         title: "Infrareport",
-        description: "Frontend & Design",
+        description: "Frontend & Google Maps",
         imgUrl: infrareportImage,
         link: "https://infrareportfrontend.vercel.app",
         isDownloadable: false,

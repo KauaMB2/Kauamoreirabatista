@@ -14,7 +14,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Habilidades</h2>
-                        <p>Além de desenvolver aplicações Desktop e projetos relacionados à visão computacional, sou desenvolvedor Fullstack!<br></br>Isso significa que você pode contar comigo para desenvolver o Frontend e o Backend de sua aplicação e para hospedá-la.</p>
+                        <p>Além de desenvolver aplicações Desktop e projetos relacionados à visão computacional e I.A., sou desenvolvedor Fullstack!<br></br>Isso significa que você pode contar comigo para desenvolver o Frontend e o Backend de sua aplicação e para hospedá-la.</p>
                         <Carousel
                           responsive={responsiveLanguages}
                           infinite={true}

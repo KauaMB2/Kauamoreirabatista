@@ -23,7 +23,7 @@ export function ProjectModal({
         </div>
         <p dangerouslySetInnerHTML={{ __html: explanation }} />
         {
-          isDownloadable && <p>Para baixar no seu Windows e utilizar a aplicação, basta clicar no botão <span className="badge text-bg-primary">Baixar!</span> abaixo,descompactar o arquivo .zip e executar o arquivo .exe. Acima, há umbreve vídeo explicando como baixar e utilizar a aplicação.</p>
+          isDownloadable && <p>Para baixar no seu Windows e utilizar a aplicação, basta clicar no botão <span className="badge text-bg-primary">Baixar!</span> abaixo, descompactar o arquivo .zip e executar o arquivo .exe. Acima, há um breve vídeo explicando como baixar e utilizar a aplicação.</p>
         }
       </Modal.Body>
       <Modal.Footer className="modalFooter">
