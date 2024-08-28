@@ -11,7 +11,6 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const toRotate = [
     "Sou Web Developer.",
-    "Sou UI/UX Designer.",
     "Tenho habilidades em Visão Computacional.",
     "Tenho experiência em Desenvolvimento Backend.",
     "Tenho conhecimentos em Bancos de Dados.",
