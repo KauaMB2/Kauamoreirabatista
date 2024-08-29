@@ -3,7 +3,7 @@ import { commentsData } from "./JSON/commentsData";
 
 export const Comments = () => {
   const [open, setOpen] = useState(false);
-  const initialComments = open ? commentsData : [commentsData[0]];
+  const initialComments = open ? commentsData : [commentsData[0], commentsData[1], commentsData[2]];
   return (
     <section id='feedbacks' className="comments">
       <div className='container'>
