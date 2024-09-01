@@ -21,6 +21,7 @@ import iPhoneImage from "../../assets/img/iphone15Image.png";
 import jogodavelhaImage from "../../assets/img/jogodavelhaImage.png";
 import infrareportmobileImage from "../../assets/img/infrareportmobileImage.png";
 import jogodaforcaImage from "../../assets/img/jogodaforcaImage.png";
+import githubsearchImage from "../../assets/img/githubsearchImage.png";
 
 export const projects = {
   categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
@@ -108,6 +109,14 @@ export const projects = {
         description: "Jogo & Entretenimento",
         imgUrl: jogodaforcaImage,
         link: "https://hangmankaua.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      },
+      {
+        title: "Github search",
+        description: "Frontend & API",
+        imgUrl: githubsearchImage,
+        link: "https://githubsearchkaua.vercel.app",
         isDownloadable: false,
         haveModal: false,
       },
