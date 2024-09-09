@@ -22,6 +22,7 @@ import jogodavelhaImage from "../../assets/img/jogodavelhaImage.png";
 import infrareportmobileImage from "../../assets/img/infrareportmobileImage.png";
 import jogodaforcaImage from "../../assets/img/jogodaforcaImage.png";
 import githubsearchImage from "../../assets/img/githubsearchImage.png";
+import tablemanagerIcon from "../../assets/img/tablemanagerIcon.png"
 
 export const projects = {
   categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
@@ -79,10 +80,10 @@ export const projects = {
     ],
     2: [
       {
-        title: "PONG",
-        description: "Jogo & Entretenimento",
-        imgUrl: pongImage,
-        link: "https://pongkaua.netlify.app",
+        title: "Table manager",
+        description: "Frontend & Empresas",
+        imgUrl: tablemanagerIcon,
+        link: "https://tablemanager.vercel.app",
         isDownloadable: false,
         haveModal: false,
       },
@@ -93,12 +94,11 @@ export const projects = {
         link: "https://savetheplanetkaua.netlify.app",
         isDownloadable: false,
         haveModal: false,
-      },
-      {
-        title: "Jogo da velha",
+      },{
+        title: "PONG",
         description: "Jogo & Entretenimento",
-        imgUrl: jogodavelhaImage,
-        link: "https://tictactoekaua.vercel.app",
+        imgUrl: pongImage,
+        link: "https://pongkaua.netlify.app",
         isDownloadable: false,
         haveModal: false,
       }
@@ -120,6 +120,14 @@ export const projects = {
         isDownloadable: false,
         haveModal: false,
       },
+      {
+        title: "Jogo da velha",
+        description: "Jogo & Entretenimento",
+        imgUrl: jogodavelhaImage,
+        link: "https://tictactoekaua.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      }
     ],
   },
   computer_vision: {
