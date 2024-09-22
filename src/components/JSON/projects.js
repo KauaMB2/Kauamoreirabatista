@@ -23,6 +23,7 @@ import infrareportmobileImage from "../../assets/img/infrareportmobileImage.png"
 import jogodaforcaImage from "../../assets/img/jogodaforcaImage.png";
 import githubsearchImage from "../../assets/img/githubsearchImage.png";
 import tablemanagerIcon from "../../assets/img/tablemanagerIcon.png"
+import homographymatrixImage from "../../assets/img/homographymatrixImage.png"
 
 export const projects = {
   categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
@@ -156,7 +157,7 @@ export const projects = {
         title: "Move Vision",
         description: "I.A. & Entretenimento",
         videoUrl: "https://www.youtube.com/embed/nhY7hpbePBQ",
-        explanation: "Move Vision é um jogo de movimento corporal. Basicamente, você acessa o jogo se registrando com um usuário e senha e, após clicar no botão \"Play\", o jogo abre sua câmera e divide ela em uma matrix 3x3 onde cada célula representa uma posição possível. Após isso, é exibida uma imagem e dois pontos representando a posição que você deve ficar e o jogador deve, em menos de um segundo, se adequar a posição exibida na imagem. As imagens são trocadas de segundo em segundo e, enquanto o jogador conseguir se adequar à sequência de movimentos e posições, ele ganha ponto, mas, se errar uma posição, o jogador perde.",
+        explanation: "Move Vision é um jogo de movimento corporal. Basicamente, você acessa o jogo se registrando com um usuário e senha e, após clicar no botão \"Play\", o jogo abre sua câmera e divide ela em uma matriz 3x3 onde cada célula representa uma posição possível. Após isso, é exibida uma imagem e dois pontos representando a posição que você deve ficar e o jogador deve, em menos de um segundo, se adequar a posição exibida na imagem. As imagens são trocadas de segundo em segundo e, enquanto o jogador conseguir se adequar à sequência de movimentos e posições, ele ganha ponto, mas, se errar uma posição, o jogador perde.",
         imgUrl: movevisionImage,
         isDownloadable: true,
         haveModal: true,
@@ -223,6 +224,16 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1EBi1P63DkbQmKV0pG38kTlQvoXLXi6rQ",
+      },
+      {
+        title: "Matriz de homografia",
+        description: "Predição & Coordenadas",
+        videoUrl: "https://www.youtube.com/embed/sUUhBJ2PPc0",
+        explanation: " O projeto consiste em uma GUI desenvolvida usando Python e tkinter que facilita o uso do modelo matemático de Matriz de homografia e RANSAC(RANdom SAmple Consensus) do OpenCV por meio do seu visual intuitivo permitindo estimar escalas como latitude e longitude por meio de algumas entradas de informações como X e Y.<br/> A matriz de homografica nada mais é que uma matriz 3x3 que, quando multiplicada por um array que contém as posições iniciais em uma escala específica(X e Y), te retorna uma estimativa do valor em outra escala(latitude e longitude). Além disso, o projeto conta como algoritmo RANSAC...<br/>RANSAC é uma técnica robusta para lidar com dados ruidosos, permitindo encontrar modelos precisos mesmo na presença de outliers(valores discrepantes) por meio da iteração de diversos subsets, escolhendo a matriz de homografia que consegue estimar o maior conjunto de pontos possíveis!!",
+        imgUrl: homographymatrixImage,
+        isDownloadable: true,
+        haveModal: true,
+        link: "https://drive.usercontent.google.com/download?id=1XvFUE7aHrmoY2b0ZEIOuuhfeRPeY2IVA",
       }
     ],
     3: [
