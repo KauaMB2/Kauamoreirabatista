@@ -24,6 +24,10 @@ import jogodaforcaImage from "../../assets/img/jogodaforcaImage.png";
 import githubsearchImage from "../../assets/img/githubsearchImage.png";
 import tablemanagerIcon from "../../assets/img/tablemanagerIcon.png"
 import homographymatrixImage from "../../assets/img/homographymatrixImage.png"
+import automlImage from "../../assets/img/automlImage.png"
+import estimativadevelocidadeImage from "../../assets/img/estimativadevelocidadeImage.png"
+import sahiImage from "../../assets/img/sahiImage.png"
+
 
 export const projects = {
   categories: ["web_development", "computer_vision", "mobile", "eletronic", "GUI"],
@@ -216,16 +220,6 @@ export const projects = {
         link: "https://drive.google.com/uc?export=download&id=1GMCnOPuk8kCGzM1yHKUIoCY_bm4ZvceK",
       },
       {
-        title: "Reconhecimento facial",
-        description: "I.A. & Reconhecimento",
-        videoUrl: "https://www.youtube.com/embed/QCRcDWnEPDg",
-        explanation: "Este projeto é uma interface gráfica desenvolvida que permite efetuar o reconhecimento de faces em fotos e pela webcam além do cadastro de novas faces e treinamento da inteligência artificial para identificação de novas faces. A aplicação foi desenvolvida utilizando Python, OpenCV, Haarcascade e Tkinter.",
-        imgUrl: reconhecimentofacialhaarcascadeImage,
-        isDownloadable: true,
-        haveModal: true,
-        link: "https://drive.google.com/uc?export=download&id=1EBi1P63DkbQmKV0pG38kTlQvoXLXi6rQ",
-      },
-      {
         title: "Matriz de homografia",
         description: "Predição & Coordenadas",
         videoUrl: "https://www.youtube.com/embed/sUUhBJ2PPc0",
@@ -234,6 +228,33 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.usercontent.google.com/download?id=1XvFUE7aHrmoY2b0ZEIOuuhfeRPeY2IVA",
+      },
+      {
+        title: "AutoML",
+        description: "I.A. & Predição",
+        videoUrl: "https://www.youtube.com/embed/2fFKFuG7p3c",
+        explanation: "Este projeto consiste em uma interface gráfica intuitiva que utiliza AutoML com PyCaret treinar o melhor modelo possível para predição de posições espaciais, como latitude e longitude por meio de uma entrada como x e y. Esta ferramenta torna o processo de análise de dados mais acessível e eficiente, facilitando a tomada de decisões em projetos de localização!<br/>O AutoML automatiza o processo de seleção de modelos e otimização de hiperparâmetros, garantindo que as melhores abordagens sejam utilizadas, mesmo para quem não é especialista em Machine Learning.",
+        imgUrl: automlImage,
+        isDownloadable: false,
+        haveModal: true,
+      },
+      {
+        title: "SAHI & YoloV8",
+        description: "I.A. & Detecção",
+        videoUrl: "https://www.youtube.com/embed/2Rdm0xL2uck",
+        explanation: "A detecção de pequenos objetos em aplicações de vigilância ou qualquer outro sistema de visão computacional representa um desafio significativo. Os objetos pequenos e distantes são frequentemente representados por um número mínimo de pixels em uma imagem e, portanto, carecem dos detalhes necessários para uma alta precisão de detecção usando detectores convencionais.<br/>Slicing Aided Hyper Inference (SAHI) é uma estrutura de código aberto que foi projetada para resolver esse problema.<br/>A principal inovação do SAHI é seu método de fatiamento (slicing), que divide imagens grandes em seções menores e aplica algum modelo de detecção de objetos em cada uma dessas fatias separadamente, permitindo um processamento mais preciso e específico para cada pedaço da imagem.",
+        imgUrl: sahiImage,
+        isDownloadable: false,
+        haveModal: true,
+      },
+      {
+        title: "Velocímetro",
+        description: "I.A. & Detecção",
+        videoUrl: "https://www.youtube.com/embed/-LXfMSju7gQ",
+        explanation: "Em todo o Brasil, torna-se importante o monitoramento de velocidade em rodovias para assegurar que os carros não estão excedendo o limite de velocidade. Foi pensando nisso que, por meio de uma simples câmera conectada ao computador, criei um algoritmo que possibilita o monitoramento da posição X e Y e da velocidade de um automóvel em qualquer estrada, utilizando o algoritmo da matriz de homografia!",
+        imgUrl: estimativadevelocidadeImage,
+        isDownloadable: false,
+        haveModal: true,
       }
     ],
     3: [
@@ -246,6 +267,16 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1mngN_lPacXToiosybKPrYv9ibA89ZlGp",
+      },
+      {
+        title: "Reconhecimento facial",
+        description: "I.A. & Reconhecimento",
+        videoUrl: "https://www.youtube.com/embed/QCRcDWnEPDg",
+        explanation: "Este projeto é uma interface gráfica desenvolvida que permite efetuar o reconhecimento de faces em fotos e pela webcam além do cadastro de novas faces e treinamento da inteligência artificial para identificação de novas faces. A aplicação foi desenvolvida utilizando Python, OpenCV, Haarcascade e Tkinter.",
+        imgUrl: reconhecimentofacialhaarcascadeImage,
+        isDownloadable: true,
+        haveModal: true,
+        link: "https://drive.google.com/uc?export=download&id=1EBi1P63DkbQmKV0pG38kTlQvoXLXi6rQ",
       }
     ]
   },
