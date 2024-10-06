@@ -27,6 +27,7 @@ import homographymatrixImage from "../../assets/img/homographymatrixImage.png"
 import automlImage from "../../assets/img/automlImage.png"
 import estimativadevelocidadeImage from "../../assets/img/estimativadevelocidadeImage.png"
 import sahiImage from "../../assets/img/sahiImage.png"
+import facecarImage from "../../assets/img/facecarImage.png"
 
 
 export const projects = {
@@ -188,14 +189,14 @@ export const projects = {
         link: "https://drive.google.com/uc?export=download&id=17gk1EKBWCM57YRzva9Qu6VBc1qBtENYD",
       },
       {
-        title: "I.A. Personal trainer",
+        title: "Face car",
         description: "I.A. & Detecção",
-        videoUrl: "https://www.youtube.com/embed/9nlQETYTNNU",
-        explanation: "Este projeto é um personal trainer automático. Utilizando inteligência artificial, é possível calcular a angulação criado por seu braço durante a execução da flexão de bíceps com halter e, utilizando essa angulação, é possível saber se o usuário está fazendo o exercício corretamente e quantas vezes ele executou. A aplicação foi desenvolvida utilizando Python, OpenCV e Mediapipe.",
-        imgUrl: personaltrainerImage,
+        videoUrl: "https://www.youtube.com/embed/xG1hg02VFIk",
+        explanation: "Facecar foi um projeto desenvolvido pela equipe TN1101 para apresentação na feira de projetos da Escola Técnica de Eletrônica Francisco Moreira da Costa, o qual atuei orientando a equipe sobre o uso das tecnologias durante o desenvolvimento. O Facecar consiste em uma câmera instalada dentro de um carro que, por meio do método HOG (Histograma de Gradientes Orientados), reconhece a face do dono e detecta rostos desconhecidos. Caso algum rosto desconhecido permaneça por 10 segundos dentro do carro, o software endenderá que é um roubo, então enviará uma informação binária via USB para um Arduino, que acionará um relé para travar o veículo, evitando assim o furto. Em resumo, o Facecar é um projeto que, por meio da visão computacional e inteligência artificial, impede que um ladrão roube o seu carro.",
+        imgUrl: facecarImage,
         isDownloadable: true,
         haveModal: true,
-        link: "https://drive.google.com/uc?export=download&id=1UZe8QML1JrIXm9CdAXDzFjclIuwlmsw-",
+        link: "https://drive.google.com/uc?export=download&id=1mITcr8L1_c1cZNPEmRv65IqNODz4jPh2",
       }
     ],
     2: [
@@ -277,6 +278,16 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1EBi1P63DkbQmKV0pG38kTlQvoXLXi6rQ",
+      },
+      {
+        title: "I.A. Personal trainer",
+        description: "I.A. & Detecção",
+        videoUrl: "https://www.youtube.com/embed/9nlQETYTNNU",
+        explanation: "Este projeto é um personal trainer automático. Utilizando inteligência artificial, é possível calcular a angulação criado por seu braço durante a execução da flexão de bíceps com halter e, utilizando essa angulação, é possível saber se o usuário está fazendo o exercício corretamente e quantas vezes ele executou. A aplicação foi desenvolvida utilizando Python, OpenCV e Mediapipe.",
+        imgUrl: personaltrainerImage,
+        isDownloadable: true,
+        haveModal: true,
+        link: "https://drive.google.com/uc?export=download&id=1UZe8QML1JrIXm9CdAXDzFjclIuwlmsw-",
       }
     ]
   },

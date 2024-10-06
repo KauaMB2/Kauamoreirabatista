@@ -924,3 +924,15 @@ button .proj-imgbx:hover .proj-txtx {
 .gradient-button:hover {
   background-position: 0 0;
 }
+
+#curriculumDiv{
+  display: flex;
+  justify-content: center;
+}
+
+#curriculumButton{
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+  width: 40vw;
+}

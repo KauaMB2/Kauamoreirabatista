@@ -102,6 +102,9 @@ export const Banner = () => {
               Até mais!
             </p>
           </TrackVisibility>
+          <div id="curriculumDiv">
+              <button className="gradient-button" id="curriculumButton" onClick={() => window.open('https://www.canva.com/design/DAFM3_nlbjY/8Ym6HA8eA6Kaw05UpEHchg/view', '_blank')}>CURRÍCULO</button>
+          </div>
         </Row>
       </Container>
     </section>
