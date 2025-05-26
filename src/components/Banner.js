@@ -10,11 +10,9 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const toRotate = [
-    "Sou Web Developer.",
-    "Tenho habilidades em Visão Computacional.",
-    "Tenho experiência em Desenvolvimento Backend.",
-    "Tenho conhecimentos em Bancos de Dados.",
-    "Tenho experiência em desenvolvimento Desktop."
+    "Visão Computacional.",
+    "Desenvolvimento fullstack.",
+    "IA, Chatbots e LLMs.",
   ];
   const period = 2500;
 
@@ -59,7 +57,7 @@ export const Banner = () => {
                 <div className="animate__animated animate__fadeIn">
                   <span className="tagline">BEM VINDO AO MEU PORTFÓLIO</span>
                   <h1 id="rotatedTxt">
-                    Olá, meu nome é Kauã.
+                    Olá, meu nome é Kauã. Tenho experiência em 
                     <span className="txt-rotate">
                       <span className="wrap"> {text}</span>
                     </span>

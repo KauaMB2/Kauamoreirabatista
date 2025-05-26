@@ -4,9 +4,7 @@ import CImage from "../../assets/img/languagesIcons/C.png";
 import CPlusPlusImage from "../../assets/img/languagesIcons/CPlusPlus.png";
 import CSharpImage from "../../assets/img/languagesIcons/CSharp.png";
 import CSSImage from "../../assets/img/languagesIcons/CSS.png";
-import DjangoImage from "../../assets/img/languagesIcons/Django.png";
 import FirebaseImage from "../../assets/img/languagesIcons/Firebase.png";
-import FlaskImage from "../../assets/img/languagesIcons/Flask.png";
 import GoogleMapsImage from "../../assets/img/languagesIcons/GoogleMaps.png";
 import JavascriptImage from "../../assets/img/languagesIcons/Javascript.png";
 import MongoDBImage from "../../assets/img/languagesIcons/MongoDB.png";
@@ -18,6 +16,13 @@ import ReactImage from "../../assets/img/languagesIcons/React.png";
 import SQLiteImage from "../../assets/img/languagesIcons/SQLite.png";
 import YoloImage from "../../assets/img/languagesIcons/Yolo.png";
 import MediapipeImage from "../../assets/img/languagesIcons/Mediapipe.png";
+import QdrantImage from  "../../assets/img/languagesIcons/Qdrant.png";
+import ScikitLearnImage from "../../assets/img/languagesIcons/ScikitLearn.png";
+import ChatGPTImage from "../../assets/img/languagesIcons/ChatGPT.png";
+import MetaImage from "../../assets/img/languagesIcons/Meta.png";
+import NextImage from "../../assets/img/languagesIcons/Next.png";
+import TypescriptImage from "../../assets/img/languagesIcons/Typescript.png";
+
 export const iconsArray=[
         {
           "image": ArduinoImage,
@@ -36,14 +41,6 @@ export const iconsArray=[
           "name": "C#"
         },
         {
-          "image": DjangoImage,
-          "name": "Django"
-        },
-        {
-          "image": FlaskImage,
-          "name": "Flask"
-        },
-        {
           "image": GoogleMapsImage,
           "name": "Google Maps API"
         },
@@ -60,8 +57,16 @@ export const iconsArray=[
           "name": "Javascript"
         },
         {
+          "image": TypescriptImage,
+          "name": "Typescript"
+        },
+        {
           "image": ReactImage,
           "name": "React"
+        },
+        {
+          "image": NextImage,
+          "name": "Next.js"
         },
         {
           "image": NodejsImage,
@@ -84,6 +89,10 @@ export const iconsArray=[
           "name": "MySQL"
         },
         {
+          "image": QdrantImage,
+          "name": "Qdrant"
+        },
+        {
           "image": PythonImage,
           "name": "Python"
         },
@@ -98,5 +107,17 @@ export const iconsArray=[
         {
           "image": MediapipeImage,
           "name": "Mediapipe"
+        },
+        {
+          "image": ScikitLearnImage,
+          "name": "Scikit-learn"
+        },
+        {
+          "image": ChatGPTImage,
+          "name": "OpenAI API"
+        },
+        {
+          "image": MetaImage,
+          "name": "Meta API"
         }
     ]

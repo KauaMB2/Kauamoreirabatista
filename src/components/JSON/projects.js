@@ -28,6 +28,7 @@ import automlImage from "../../assets/img/automlImage.png"
 import estimativadevelocidadeImage from "../../assets/img/estimativadevelocidadeImage.png"
 import sahiImage from "../../assets/img/sahiImage.png"
 import facecarImage from "../../assets/img/facecarImage.png"
+import detectorrtspImage from "../../assets/img/detectorrtspImage.png"
 
 
 export const projects = {
@@ -149,6 +150,15 @@ export const projects = {
         link: "https://drive.google.com/uc?export=download&id=1-kS-HQ3JC-XP9BYvvJj1pE8QjO3-a0Gr",
       },
       {
+        title: "Detector RTSP",
+        description: "Classificação e Detecção",
+        videoUrl: "https://www.youtube.com/embed/uIJGyczc02g",
+        explanation: "O detector RTSP é um software capaz de transformar qualquer câmera de segurança em uma central de alarme via protocolo RTSP! O software contém um classificador que roda em tempo real classificando imagens como sendo \"Com pessoa\" ou \"Sem pessoa\". Se o classificador classificar uma imagem como sendo \"Com pessoa\" e a câmera estiver armada para disparo, um segundo modelo de I.A responsável pela confirmação e detecção é chamado e, caso o modelo de classificação e detecção tenham encontrado alguém na foto, é desenhado uma caixa delimitadora ao redor da pessoa e uma mensagem é enviada automaticamente para o WhatsApp do usuário com a imagem informando sobre a invasão! Os dois modelos foram treinados por mim e toda a interface e o backend também foram feitos por mim utilizando HTML, CSS, Javscript, Electron e Python.",
+        imgUrl: detectorrtspImage,
+        isDownloadable: false,
+        haveModal: true,
+      },
+      {
         title: "Paint visual",
         description: "I.A. & Design",
         videoUrl: "https://www.youtube.com/embed/Z7B6_DMFadw",
@@ -187,7 +197,9 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=17gk1EKBWCM57YRzva9Qu6VBc1qBtENYD",
-      },
+      }
+    ],
+    2: [
       {
         title: "Face car",
         description: "I.A. & Detecção",
@@ -197,9 +209,7 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1mITcr8L1_c1cZNPEmRv65IqNODz4jPh2",
-      }
-    ],
-    2: [
+      },
       {
         title: "Mouse visual",
         description: "I.A. & Detecção",
@@ -247,15 +257,6 @@ export const projects = {
         imgUrl: sahiImage,
         isDownloadable: false,
         haveModal: true,
-      },
-      {
-        title: "Velocímetro",
-        description: "I.A. & Detecção",
-        videoUrl: "https://www.youtube.com/embed/-LXfMSju7gQ",
-        explanation: "Em todo o Brasil, torna-se importante o monitoramento de velocidade em rodovias para assegurar que os carros não estão excedendo o limite de velocidade. Foi pensando nisso que, por meio de uma simples câmera conectada ao computador, criei um algoritmo que possibilita o monitoramento da posição X e Y e da velocidade de um automóvel em qualquer estrada, utilizando o algoritmo da matriz de homografia!",
-        imgUrl: estimativadevelocidadeImage,
-        isDownloadable: false,
-        haveModal: true,
       }
     ],
     3: [
@@ -288,6 +289,15 @@ export const projects = {
         isDownloadable: true,
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1UZe8QML1JrIXm9CdAXDzFjclIuwlmsw-",
+      },
+      {
+        title: "Velocímetro",
+        description: "I.A. & Detecção",
+        videoUrl: "https://www.youtube.com/embed/-LXfMSju7gQ",
+        explanation: "Em todo o Brasil, torna-se importante o monitoramento de velocidade em rodovias para assegurar que os carros não estão excedendo o limite de velocidade. Foi pensando nisso que, por meio de uma simples câmera conectada ao computador, criei um algoritmo que possibilita o monitoramento da posição X e Y e da velocidade de um automóvel em qualquer estrada, utilizando o algoritmo da matriz de homografia!",
+        imgUrl: estimativadevelocidadeImage,
+        isDownloadable: false,
+        haveModal: true,
       }
     ]
   },
