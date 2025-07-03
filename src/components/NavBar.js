@@ -52,7 +52,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kauamb2/"><img src={navIcon1} alt="" /></a>
                 <a target="_blank" rel="noreferrer" href="https://wa.me/5535984714567"><img src={navIcon2} alt="" /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua_moreira_batista/"><img src={navIcon3} alt="" /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua.moreira.batista/"><img src={navIcon3} alt="" /></a>
                 <a target="_blank" rel="noreferrer" href="https://github.com/KauaMB2/"><img src={navIcon4} alt="" /></a>
               </div>
             </span>

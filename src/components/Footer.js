@@ -19,7 +19,7 @@ export const Footer = () => {
             <a className="social-link" target="_blank" rel="noreferrer" href="https://wa.me/5535984714567">
               <img src={navIcon2} alt="WhatsApp" />
             </a>
-            <a className="social-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua_moreira_batista/">
+            <a className="social-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua.moreira.batista/">
               <img src={navIcon3} alt="Instagram" />
             </a>
             <a className="social-link" target="_blank" rel="noreferrer" href="https://github.com/KauaMB2/">
@@ -36,8 +36,8 @@ export const Footer = () => {
             <a className="social-link-text" target="_blank" rel="noreferrer" href="https://wa.me/5535984714567">
               <p>35984714567</p>
             </a>
-            <a className="social-link-text" target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua_moreira_batista/">
-              <p>@kaua_moreira_batista</p>
+            <a className="social-link-text" target="_blank" rel="noreferrer" href="https://www.instagram.com/kaua.moreira.batista/">
+              <p>@kaua.moreira.batista</p>
             </a>
             <a className="social-link-text" target="_blank" rel="noreferrer" href="https://github.com/KauaMB2/">
               <p>KauaMB2</p>
