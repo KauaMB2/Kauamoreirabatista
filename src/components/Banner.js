@@ -79,11 +79,11 @@ export const Banner = () => {
           <TrackVisibility>
             <div className="wrapper">
               <div className="h_iframe">
-                <iframe allow="fullscreen;" title="Vídeo de apresentação" height='465px' width='470px' src="https://www.youtube.com/embed/Yri1QBEo8Fs" allowFullScreen></iframe>
+                <iframe allow="fullscreen;" title="Vídeo de apresentação" height='465px' width='470px' src="https://www.youtube.com/embed/s1xH0MOSWc4" allowFullScreen></iframe>
               </div>
             </div>
             <p>
-              Olá, meu nome é Kauã, tenho 19 anos, curso Engenharia de Software
+              Olá, meu nome é Kauã, tenho 20 anos, curso Engenharia de Software
               no Inatel e sou completamente apaixonado por tecnologia, inovação
               e desafios. Sou proativo e curioso por natureza, e garanto que
               sempre procuro alcançar o protagonismo no que faço, com o intuito
