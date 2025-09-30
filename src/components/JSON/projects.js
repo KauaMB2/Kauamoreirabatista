@@ -152,7 +152,7 @@ export const projects = {
       {
         title: "Detector RTSP",
         description: "Classificação e Detecção",
-        videoUrl: "https://www.youtube.com/embed/uIJGyczc02g",
+        videoUrl: "https://www.youtube.com/embed/nzU9LD8b0wU",
         explanation: "O detector RTSP é um software capaz de transformar qualquer câmera de segurança em uma central de alarme via protocolo RTSP! O software contém um classificador que roda em tempo real classificando imagens como sendo \"Com pessoa\" ou \"Sem pessoa\". Se o classificador classificar uma imagem como sendo \"Com pessoa\" e a câmera estiver armada para disparo, um segundo modelo de I.A responsável pela confirmação e detecção é chamado e, caso o modelo de classificação e detecção tenham encontrado alguém na foto, é desenhado uma caixa delimitadora ao redor da pessoa e uma mensagem é enviada automaticamente para o WhatsApp do usuário com a imagem informando sobre a invasão! Os dois modelos foram treinados por mim e toda a interface e o backend também foram feitos por mim utilizando HTML, CSS, Javscript, Electron e Python.",
         imgUrl: detectorrtspImage,
         isDownloadable: false,
