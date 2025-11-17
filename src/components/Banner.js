@@ -83,7 +83,7 @@ export const Banner = () => {
               </div>
             </div>
             <p>
-              Olá, meu nome é Kauã, tenho 20 anos, curso Engenharia de Software
+              Olá, meu nome é Kauã, tenho 21 anos, curso Engenharia de Software
               no Inatel e sou completamente apaixonado por tecnologia, inovação
               e desafios. Sou proativo e curioso por natureza, e garanto que
               sempre procuro alcançar o protagonismo no que faço, com o intuito
