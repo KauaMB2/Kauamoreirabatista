@@ -8,6 +8,7 @@ export function ProjectModal({
   explanation,
   videoUrl,
   link,
+  imgUrl,
   isDownloadable
 }) {
   return (
@@ -18,7 +19,7 @@ export function ProjectModal({
       <Modal.Body className="modalBackground">
         <div className="wrapper">
           <div className="h_iframe">
-            <iframe allow="fullscreen;" title={title} height='465px' width='470px' src={videoUrl} allowFullScreen></iframe>
+            {videoUrl ? <iframe allow="fullscreen;" title={title} height='465px' width='470px' src={videoUrl} allowFullScreen></iframe> : <img src={imgUrl} alt={title} />}
           </div>
         </div>
         <p dangerouslySetInnerHTML={{ __html: explanation }} />

@@ -29,6 +29,9 @@ import estimativadevelocidadeImage from "../../assets/img/estimativadevelocidade
 import sahiImage from "../../assets/img/sahiImage.png"
 import facecarImage from "../../assets/img/facecarImage.png"
 import detectorrtspImage from "../../assets/img/detectorrtspImage.png"
+import juditeImage from "../../assets/img/juditeImage.png"
+import acaideliveryImage from "../../assets/img/acaideliveryImage.png";
+import smarlinkImage from "../../assets/img/smarlinkImage.png";
 
 
 export const projects = {
@@ -36,6 +39,14 @@ export const projects = {
   divisions: [1, 2, 3],
   web_development: {
     1: [
+      {
+        title: "Judite",
+        description: "Frontend & Backend",
+        imgUrl: juditeImage,
+        explanation: "Judite é uma plataforma web criada para automatizar o atendimento de empresas, integrando WhatsApp, Messenger, Instagram Direct e Webchat por meio da API oficial da Meta. O sistema oferece respostas automáticas, mensagens agendadas, dashboard com métricas, gestão de contatos e configuração completa de agentes de I.A., incluindo personalidade, ferramentas e parâmetros de operação. A plataforma também suporta contexto dinâmico extraído de vídeos, sites, PDFs, Word ou texto livre, além de integrações com serviços externos como Correios, Google Sheets, Freshdesk, Brasil API e Asaas. O agente utiliza ainda um banco de dados vetorial, permitindo respostas mais contextuais, precisas e alinhadas aos produtos e serviços da empresa. Com arquitetura modular e práticas de DevOps, o Judite é uma solução escalável, eficiente e fácil de manter.",
+        isDownloadable: false,
+        haveModal: true,
+      },
       {
         title: "Studybuddy",
         description: "Frontend & Design",
@@ -45,10 +56,10 @@ export const projects = {
         haveModal: false,
       },
       {
-        title: "Studybuddy API",
-        description: "Backend & REST API",
-        imgUrl: studybuddyapiImage,
-        link: "https://kauamoreira.pythonanywhere.com/api/",
+        title: "Açaí Delivery",
+        description: "Frontend & Delivery",
+        imgUrl: acaideliveryImage,
+        link: "https://acaideliverysrs.vercel.app",
         isDownloadable: false,
         haveModal: false,
       },
@@ -61,39 +72,22 @@ export const projects = {
         haveModal: false,
       },
       {
-        title: "Infrareport API",
-        description: "Backend & REST API",
-        imgUrl: infrareportapiImage,
-        link: "https://infrareportrestapi.pythonanywhere.com",
-        isDownloadable: false,
-        haveModal: false,
-      },
-      {
-        title: "Team allocation",
-        description: "Frontend & Empresas",
-        imgUrl: teamallocationImage,
-        link: "https://teamallocation.vercel.app",
-        isDownloadable: false,
-        haveModal: false,
-      },
-      {
         title: "iPhone 15 Pro",
         description: "Frontend & 3D",
         imgUrl: iPhoneImage,
         link: "https://appleiphone15prokaua.vercel.app",
         isDownloadable: false,
         haveModal: false,
-      }
-    ],
-    2: [
-      {
+      },{
         title: "Table manager",
         description: "Frontend & Empresas",
         imgUrl: tablemanagerIcon,
         link: "https://tablemanager.vercel.app",
         isDownloadable: false,
         haveModal: false,
-      },
+      }
+    ],
+    2: [
       {
         title: "Save the planet",
         description: "Jogo & Entretenimento",
@@ -108,10 +102,21 @@ export const projects = {
         link: "https://pongkaua.netlify.app",
         isDownloadable: false,
         haveModal: false,
-      }
-    ],
-    3: [
-      {
+      },{
+        title: "Team allocation",
+        description: "Frontend & Empresas",
+        imgUrl: teamallocationImage,
+        link: "https://teamallocation.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      },{
+        title: "Github search",
+        description: "Frontend & API",
+        imgUrl: githubsearchImage,
+        link: "https://githubsearchkaua.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      },{
         title: "Jogo da forca",
         description: "Jogo & Entretenimento",
         imgUrl: jogodaforcaImage,
@@ -120,18 +125,28 @@ export const projects = {
         haveModal: false,
       },
       {
-        title: "Github search",
-        description: "Frontend & API",
-        imgUrl: githubsearchImage,
-        link: "https://githubsearchkaua.vercel.app",
+        title: "Studybuddy API",
+        description: "Backend & REST API",
+        imgUrl: studybuddyapiImage,
+        link: "https://kauamoreira.pythonanywhere.com/api/",
         isDownloadable: false,
         haveModal: false,
       },
+    ],
+    3: [
       {
         title: "Jogo da velha",
         description: "Jogo & Entretenimento",
         imgUrl: jogodavelhaImage,
         link: "https://tictactoekaua.vercel.app",
+        isDownloadable: false,
+        haveModal: false,
+      },
+      {
+        title: "Infrareport API",
+        description: "Backend & REST API",
+        imgUrl: infrareportapiImage,
+        link: "https://infrareportrestapi.pythonanywhere.com",
         isDownloadable: false,
         haveModal: false,
       }
@@ -311,7 +326,7 @@ export const projects = {
         imgUrl: infrareportmobileImage,
         isDownloadable: false,
         haveModal: true,
-      }
+      },
     ],
     2: [],
     3: []
@@ -326,8 +341,7 @@ export const projects = {
         imgUrl: vsmeterImage,
         isDownloadable: false,
         haveModal: true,
-        link: undefined
-      },
+      }
     ],
     2: [],
     3: [],
@@ -344,6 +358,14 @@ export const projects = {
         haveModal: true,
         link: "https://drive.google.com/uc?export=download&id=1bbjuUBhrgIxssiIYxmPIIR3IyyfpB-Ye",
       },
+      {
+        title: "Smarlink",
+        description: "Chatbot & Redes",
+        explanation: "Orientei a equipe TN2105 da ETE FMC no desenvolvimento do projeto Smarlink, um projeto que permite acessar o roteador e obter um relatório dos dispositivos conectados via Whatsapp. Por meio de um chatbot, é possível obter informações como: nome do dispositivo, IP e MAC Address. O Smartlink é uma solução inovadora para gerenciar dispositivos conectados à rede doméstica de forma prática e eficiente.",
+        imgUrl: smarlinkImage,
+        isDownloadable: false,
+        haveModal: true,
+      }
     ],
     2: [],
     3: [],
