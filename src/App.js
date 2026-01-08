@@ -7,6 +7,8 @@ import { Footer } from "./components/Footer";
 import { Skills } from "./components/Skills";
 import { Comments } from "./components/Comments";
 
+import './i18n'; 
+
 function App() {
   return (
     <div className="App">

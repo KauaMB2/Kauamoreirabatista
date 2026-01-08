@@ -1,3 +1,4 @@
+import { Arrow90degLeft } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
@@ -14,7 +15,7 @@ export function ProjectModal({
   return (
     <Modal className="projectModal" show={projectModal} onHide={() => { setProjectModal(false)}}>
       <Modal.Header className="modalHeader" closeButton>
-        <Modal.Title className="modalTitle">{title}</Modal.Title>
+        <Modal.Title className="modalTitle text-white">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body className="modalBackground">
         <div className="wrapper">
@@ -22,15 +23,12 @@ export function ProjectModal({
             {videoUrl ? <iframe allow="fullscreen;" title={title} height='465px' width='470px' src={videoUrl} allowFullScreen></iframe> : <img src={imgUrl} alt={title} />}
           </div>
         </div>
-        <p dangerouslySetInnerHTML={{ __html: explanation }} />
-        {
-          isDownloadable && <p>Para baixar no seu Windows e utilizar a aplicação, basta clicar no botão <span className="badge text-bg-primary">Baixar!</span> abaixo, descompactar o arquivo .zip e executar o arquivo .exe. Acima, há um breve vídeo explicando como baixar e utilizar a aplicação.</p>
-        }
+        <p className="text-white" dangerouslySetInnerHTML={{ __html: explanation }} />
       </Modal.Body>
       <Modal.Footer className="modalFooter">
-        <Button variant="secondary" onClick={() => {setProjectModal(false)}}>Sair</Button>
+        <Button variant="secondary" onClick={() => {setProjectModal(false)}}><Arrow90degLeft/></Button>
         {
-          isDownloadable && <Button variant="primary" href={link} target="_blank">Baixar!</Button>
+          isDownloadable && <Button variant="primary" href={link} target="_blank">Download!</Button>
         }
       </Modal.Footer>
     </Modal>

@@ -1,54 +1,55 @@
 import { Col } from "react-bootstrap";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ProjectModal } from "./Modals/ProjectModal";
 
 export const WebProjectCard = ({
-  title,
-  description,
-  explanation,
+  projectKey,
+  category,
+  project, 
   imgUrl,
   link,
   videoUrl,
-  category,
   isDownloadable,
   haveModal
 }) => {
-  const [projectModal, setProjectModal] = useState(false)
-  const processClick=()=>{
-    if (haveModal){
-      setProjectModal(true)
-      return
+  const { t } = useTranslation();
+  const [projectModal, setProjectModal] = useState(false);
+  const resolvedKey = projectKey ?? (project && (project.key ?? project.title ?? project.name)) ?? "";
+  const safeKey = String(resolvedKey).replace(/\./g, "_");
+  const basePath = resolvedKey ? `projects.${category}.${safeKey}` : null;
+  const title = basePath ? t(`${basePath}.title`) : (project?.title ?? "No title");
+  const description = basePath ? t(`${basePath}.description`) : (project?.description ?? "");
+  const explanation = basePath ? t(`${basePath}.explanation`, { defaultValue: "" }) : (project?.explanation ?? "");
+  const processClick = () => {
+    if (haveModal) {
+      setProjectModal(true);
+      return;
     }
-    if (category==="web_development" && link !== undefined){
-      window.open(
-        link,
-        '_blank' // <- This is what makes it open in a new window.
-      )
+
+    if (category === "web_development" && link) {
+      window.open(link, "_blank");
     }
-  }
+  };
+
   return (
     <>
-      {
-        haveModal && (
-          <ProjectModal
-            projectModal={projectModal}
-            setProjectModal={setProjectModal}
-            title={title}
-            description={description}
-            explanation={explanation}
-            imgUrl={imgUrl}
-            videoUrl={videoUrl}
-            link={link}
-            isDownloadable={isDownloadable}
-          />
-        )
-      }
+      {haveModal && (
+        <ProjectModal
+          projectModal={projectModal}
+          setProjectModal={setProjectModal}
+          title={title}
+          description={description}
+          explanation={explanation}
+          imgUrl={imgUrl}
+          videoUrl={videoUrl}
+          link={link}
+          isDownloadable={isDownloadable}
+        />
+      )}
+
       <Col size={12} sm={6} md={4}>
-        <button
-          target="_blank"
-          rel="noreferrer"
-          onClick={processClick}
-        >
+        <button onClick={processClick}>
           <div className="proj-imgbx">
             <img src={imgUrl} alt={title} />
             <div className="proj-txtx">
@@ -59,5 +60,5 @@ export const WebProjectCard = ({
         </button>
       </Col>
     </>
-  )
-}
+  );
+};

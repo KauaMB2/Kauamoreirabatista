@@ -3,16 +3,18 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 import { iconsArray } from "./JSON/languageIcons";
 import { responsiveLanguages } from "./JSON/responsiveLanguages"
+import { useTranslation } from 'react-i18next';
 
 export const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section className="skill" id="skills">
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Habilidades</h2>
-                        <p>Além de desenvolver aplicações desktop e projetos relacionados à visão computacional, LLMs, chatbots e I.A., sou desenvolvedor Fullstack!<br></br>Isso significa que você pode contar comigo para desenvolver o Frontend e o Backend de sua aplicação e também para hospedá-la.</p>
+                        <h2>{t('skills.title')}</h2>
+                        <p>{t('skills.description')}</p>
                         <Carousel
                           responsive={responsiveLanguages}
                           infinite={true}

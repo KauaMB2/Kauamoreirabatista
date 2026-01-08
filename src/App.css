@@ -370,6 +370,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 3em;
 }
 
+.nav.nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+}
+
+.nav.nav-pills .nav-item {
+  display: flex;
+}
+
+.nav.nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px; /* Ajuste conforme necessário */
+}
+
+/* Garante altura consistente mesmo com quebra de linha */
+#pills-categories .nav-item,
+#pills-tabs .nav-item {
+  min-height: 50px;
+}
+
 
 @media (max-width: 1000px) {
   #pills-categories{
